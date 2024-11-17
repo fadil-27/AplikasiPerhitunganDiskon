@@ -174,15 +174,18 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtHargaAsli">
+              <Events>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtHargaAsliKeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JComboBox" name="cmbDiskonTambahan">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
+                    <StringItem index="0" value="10%"/>
+                    <StringItem index="1" value="30%"/>
+                    <StringItem index="2" value="60%"/>
+                    <StringItem index="3" value="90%"/>
                   </StringArray>
                 </Property>
               </Properties>

@@ -13,6 +13,8 @@ public class JFrame extends javax.swing.JFrame {
      */
     public JFrame() {
         initComponents();
+        
+        
     }
 
     /**
@@ -59,7 +61,13 @@ public class JFrame extends javax.swing.JFrame {
 
         jLabel3.setText("Diskon");
 
-        cmbDiskonTambahan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtHargaAsli.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtHargaAsliKeyTyped(evt);
+            }
+        });
+
+        cmbDiskonTambahan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10%", "30%", "60%", "90%" }));
 
         txtPersentaseDiskon.setEditable(false);
         txtPersentaseDiskon.setBackground(new java.awt.Color(255, 255, 153));
@@ -287,6 +295,10 @@ public class JFrame extends javax.swing.JFrame {
     txtPersentaseDiskon.setText("Tambahan Diskon " + diskon + "%"); // Pastikan txtPersentaseDiskon adalah nama JTextField yang digunakan.
 
     }//GEN-LAST:event_sliderDiskonStateChanged
+
+    private void txtHargaAsliKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHargaAsliKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtHargaAsliKeyTyped
 
     /**
      * @param args the command line arguments
